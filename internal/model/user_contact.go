@@ -6,6 +6,7 @@ import (
 	"gorm.io/gorm"
 )
 
+// UserContact 用户联系表	定义了一个 gorm 模型 UserContact，用来映射数据库中的一张表
 type UserContact struct {
 	Id          int64          `gorm:"column:id;primaryKey;comment:自增id"`
 	UserId      string         `gorm:"column:user_id;index;type:char(20);not null;comment:用户唯一id"`

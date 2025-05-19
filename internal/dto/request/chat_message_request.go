@@ -1,5 +1,6 @@
 package request
 
+// ChatMessageRequest 聊天消息请求
 type ChatMessageRequest struct {
 	SessionId  string `json:"session_id"`
 	Type       int8   `json:"type"`
